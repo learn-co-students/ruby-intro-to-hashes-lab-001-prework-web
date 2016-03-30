@@ -35,6 +35,9 @@ describe "building a multidimensional monopoly hash" do
     end
   end
 
+
+
+
   context "adding key-value pairs to the second-level of the monopoly hash using the monopoly hash we starting building in the #monopoly method" do
     describe "#monopoly_with_second_tier" do 
       
@@ -46,10 +49,19 @@ describe "building a multidimensional monopoly hash" do
         expect(monopoly_with_second_tier.values[0].keys[0]).to eq(:pieces)
       end
       
+
+
+
+      #####
+
       it "sets the second key of railroads hash to a symbol, :names, whose value is an empty hash" do
 
         expect(monopoly_with_second_tier[:railroads][:names]).to eq({})
       end
+
+
+
+#####
 
       it "sets the third key of railroads hash to a symbol, :rent_in_dollars whose value is an empty hash " do
 
@@ -58,6 +70,8 @@ describe "building a multidimensional monopoly hash" do
       end
     end
   end
+
+  #####
 
   context "adding key/value pairs to the third level of the monopoly hash we continued building in the previous method" do
     describe "#monopoly_with_third_tier" do 
