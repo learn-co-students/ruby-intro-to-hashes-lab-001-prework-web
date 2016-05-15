@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+if
+  [[ -s "/home/nitrous/code/labs/ruby-intro-to-hashes-lab-001-prework-web/.bundle/environment" ]]
+then
+  source "/home/nitrous/code/labs/ruby-intro-to-hashes-lab-001-prework-web/.bundle/environment"
+  exec ri "$@"
+else
+  echo "ERROR: Missing RVM environment file: '/home/nitrous/code/labs/ruby-intro-to-hashes-lab-001-prework-web/.bundle/environment'" >&2
+  exit 1
+fi
